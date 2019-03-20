@@ -44,3 +44,14 @@ $ cat readme.txt
 
 #查看操作命令记录
 $ git reflog
+
+#撤销修改
+#未add
+$ git checkout -- readme.txt
+#已add,先撤回工作区
+$ git reset HEAD readme.txt
+$ git checkout -- readme.txt
+
+#删除文件
+$ git rm test.txt
+$ git commit -m "remove teat.txt"
