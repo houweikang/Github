@@ -1,0 +1,2 @@
+$ ssh-keygen -p
+当提升你输入新的密码的时候，按enter就可以啦，继续确认enter就可以
