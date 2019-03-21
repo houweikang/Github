@@ -82,3 +82,5 @@ $ git log --graph
 #删除分支
 $ git branch -d dev
 
+test --on-ff
+
