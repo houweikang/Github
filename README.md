@@ -81,6 +81,65 @@ $ git log --graph
 
 #删除分支
 $ git branch -d dev
+	#强行删除分支
+	$ git branch -D dev
 
-test --on-ff
+#储存当前工作现场
+$ git stash
+
+#查看工作现场
+$ git stash list
+
+#恢复工作现场
+	#恢复
+	$ git stash apply    or    $ git stash apply stash@{0}
+	#删除stash
+	$ git stash drop
+	
+	#恢复并删除
+	$ git stash pop
+	
+#查看远程库信息
+$ git remote
+	#显示更详细信息
+	$ git remote -v
+
+#抓取远程新提交
+$ git pull
+
+#在本地创建和远程分支对应的分支
+$ git checkout -b branch-name origin/branch-name
+#建立本地分支和远程分支的关联
+$ git branch --set-upstream branch-name origin/branch-name
+
+#把本地未push的分叉提交历史整理成直线
+$ git rebase
+
+#打标签
+$ git tag <tag—name>
+	#历史提交打标签
+	$ git tag <tag—name> <commit id>
+	#指定标签信息
+	$ git tag -a <tagname> -m "blablabla..."
+
+#查看标签
+$ git tag
+#查看标签信息
+$ git show <tag—name>
+#删除标签
+$ git tag -d <tag—name>
+#删除远程标签
+	#先删除本地标签
+	$ git tag -d <tag—name>
+	#删除远程标签
+	$ git push origin :refs/tags/<tag—name>
+
+#推送某个标签到远程
+$ git push origin <tagname>
+#推送尚未推送到远程的本地标签
+$ git push origin --tags
+
+
+
+
 
