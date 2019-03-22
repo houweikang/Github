@@ -27,7 +27,7 @@ $ git add readme.txt
 #用命令git commit告诉Git，把文件提交到仓库,m后面是本次提交的说明，commit可提交多个文件
 $ git commit -m "message"
 
-#查看结果
+#查看状态
 $ git status
 
 #查看不同
@@ -51,10 +51,10 @@ $ git reflog
 
 #上传本地库到github
 $ git remote add origin git@github.com:houweikang/Gittest.git
-#第一次删除
-$ git push -u origin master
-#之后上传
-$ git push origin master
+	#第一次删除
+	$ git push -u origin master
+	#之后上传
+	$ git push origin master
 
 #克隆github远程库到本地库
 $ git clone git@github.com:houweikang/Github.git
@@ -138,8 +138,3 @@ $ git tag -d <tag—name>
 $ git push origin <tagname>
 #推送尚未推送到远程的本地标签
 $ git push origin --tags
-
-
-
-
-
